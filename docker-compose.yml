@@ -27,6 +27,7 @@ services:
     ports:
       - 3000:3000
     labels:
+      - "shipyard.route=/"
       - "traefik.backend=rocketchat"
       - "traefik.frontend.rule=Host: your.domain.tld"
 
